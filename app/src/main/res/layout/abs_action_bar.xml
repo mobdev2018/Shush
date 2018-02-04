@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="SHUSH!"
+        android:fontFamily="@+id/yananeska.ttf"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:id="@+id/actionBarTitle"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/get_current"
+        android:text="Use Current"
+        android:padding="2dp"
+        android:layout_margin="4dp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@+id/yananeska.ttf"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:background="@drawable/user_current_button_background"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_volume_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.knafayim.shush.VolumeSettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/start_after_boot"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@+id/yananeska.ttf"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:theme="@style/SwitchCompatTheme"
+        android:text="Run app on phone startup"/>
+
+    <TextView
+        android:text="When entering location, set phone to:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/start_after_boot"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/enterRadioGroup" >
+
+        <RadioButton
+            android:text="Vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vibrateRadioButton"
+            android:layout_weight="1"
+            app:buttonTint="@color/colorPrimary" />
+
+        <RadioButton
+            android:text="Silent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/silentRadioButton"
+            android:layout_weight="1"
+            app:buttonTint="@color/colorPrimary" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="When leaving location, set phone to:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterRadioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/exitRadioGroup" >
+
+        <RadioButton
+            android:text="Revert to previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/revertRadioButton"
+            android:layout_weight="1"
+            app:buttonTint="@color/colorPrimary" />
+
+        <RadioButton
+            android:text="Do nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nothingRadioButton"
+            android:layout_weight="1"
+            app:buttonTint="@color/colorPrimary" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_marginTop="30dp"
+        android:text="Select Location Radius (ft):"
+        android:layout_below="@+id/exitRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/radius"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/progress_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bsb_bubble_color="@color/colorPrimary"
+        app:bsb_bubble_text_color="@android:color/white"
+        app:bsb_max="500"
+        app:bsb_second_track_color="@color/colorPrimary"
+        app:bsb_section_count="0"
+        app:bsb_section_text_position="bottom_sides"
+        app:bsb_show_section_mark="false"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_thumb_color="@color/colorPrimary"
+        app:bsb_track_color="@android:color/darker_gray"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Save"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/saveSettingsButton"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveSettings" />
+
+
+
+</RelativeLayout>

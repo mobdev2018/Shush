@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shush</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string-array name="minutes_array">
+        <item>1 min</item>
+        <item>3 mins</item>
+        <item>5 mins</item>
+        <item>15 mins</item>
+        <item>30 mins</item>
+    </string-array>
+    <string name="title_activity_maps">SelectLocation</string>
+    <string name="start_geofence">start geofence</string>
+    <string name="stop_geofence">stop geofence</string>
+    <string name="like_us">Like this app? Please consider donating a dollar or more to support it!</string>
+</resources>

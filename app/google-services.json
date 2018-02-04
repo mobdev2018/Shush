@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "891919637737",
+    "firebase_url": "https://shtok-72107.firebaseio.com",
+    "project_id": "shtok-72107",
+    "storage_bucket": "shtok-72107.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891919637737:android:0b07a7fbb8b733fe",
+        "android_client_info": {
+          "package_name": "com.knafayim.shtok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891919637737-bnojqo47eiajptj0j266fi58m21b9qpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsQ7Zx6m_Pd2bNUD7vGd3mW7V7NeJgLNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
